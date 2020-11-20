@@ -24,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
     // ImageView
     private ImageView iv_test;
 
+    // By Another Activity
+    private Button btn_listview;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,6 +63,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "ImageView Toast", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        // BY ANOTHER ACTIVITY
+        // ListView
+        btn_listview = findViewById(R.id.btn_listview);
+        btn_listview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ListActivity.class);
+                startActivity(intent);
             }
         });
 
