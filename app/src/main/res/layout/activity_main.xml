@@ -20,4 +20,16 @@
         android:textColor="#30067A"
         android:text="TEST" />
 
+<!--    EditText-->
+    <EditText
+        android:id="@+id/et_id"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Edit Text"/>
+    <Button
+        android:id="@+id/btn_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"/>
+
 </LinearLayout>
