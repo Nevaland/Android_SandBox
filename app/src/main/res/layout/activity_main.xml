@@ -13,12 +13,12 @@
         android:layout_height="wrap_content"
         android:textColor="#6114EC"
         android:textSize="20sp"
-        android:text="TEXT VIEW" />
+        android:text="TEXT VIEW"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#30067A"
-        android:text="TEST" />
+        android:text="TEST"/>
 
 <!--    EditText-->
     <EditText
@@ -36,8 +36,7 @@
     <EditText
         android:id="@+id/et_test"
         android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        />
+        android:layout_height="wrap_content"/>
     <Button
         android:id="@+id/btn_move"
         android:layout_width="wrap_content"
