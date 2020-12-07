@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     // By Another Activity
     private Button btn_listview;
+    private Button btn_nav;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +74,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ListActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // Navigation
+        btn_nav = findViewById(R.id.btn_nav);
+        btn_nav.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, NavActivity.class);
                 startActivity(intent);
             }
         });
